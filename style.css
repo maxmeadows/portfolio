@@ -115,7 +115,7 @@ ul.main-menu {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: right;
+  justify-content: left;
   list-style: none;
 }
 ul.main-menu li a {

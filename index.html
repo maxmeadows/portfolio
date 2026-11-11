@@ -60,6 +60,12 @@
 
           <div id="storymap" class="content-region hide">
             <h2>My GIS StoryMap</h2>
+            <script>
+              window.storyMapsEmbedConfig = {
+                "storyId": "417a681f15dd44dd90ee016467c8176b",
+                "rootNode": ".storymaps-root"
+              }
+            </script>
             <p>
               <script src="https://storymaps.arcgis.com/embed/view"></script>
             </p>
@@ -75,16 +81,6 @@
         </div>
       </div>
     </div>
-
-    <script>
-      if (window.location.pathname.includes('storymap.html')) {
-        window.storyMapsEmbedConfig = {
-          "storyId": "417a681f15dd44dd90ee016467c8176b",
-          "rootNode": ".storymaps-root"
-        }
-        console.log("The script is executing only on the contact page.");
-      }
-    </script>
     
     <footer>  
       Footer region

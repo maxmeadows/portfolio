@@ -67,8 +67,14 @@
           <div id="storymap" class="content-region hide">
             <h2>My GIS StoryMap</h2>
             <p>
-              <script src="https://storymaps.arcgis.com/embed/view"></script>
+              
             </p>
+            <div id="my-unique-embed-container"></div>
+            <script>
+              if (document.getElementById('my-unique-embed-container')) {
+                <script src="https://storymaps.arcgis.com/embed/view"></script>
+              }
+            </script>
           </div>
           
           <div id="contact" class="content-region hide">

@@ -20,6 +20,12 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
 
+    <script>
+      window.storyMapsEmbedConfig = {
+        "storyId": "417a681f15dd44dd90ee016467c8176b",
+        "rootNode": ".storymaps-root"
+      }
+    </script>
     <!-- Want to add Bootstrap? -->
     <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
     
@@ -60,15 +66,11 @@
 
           <div id="storymap" class="content-region hide">
             <h2>My GIS StoryMap</h2>
-            <script>
-              window.storyMapsEmbedConfig = {
-                "storyId": "417a681f15dd44dd90ee016467c8176b",
-                "rootNode": ".storymaps-root"
-              }
-            </script>
             <p>
-              <script src="https://storymaps.arcgis.com/embed/view"></script>
+              
             </p>
+            <div class="storymaps-root"></div>
+            <script src="https://storymaps.arcgis.com/embed/view"></script>
           </div>
           
           <div id="contact" class="content-region hide">

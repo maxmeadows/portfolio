@@ -140,3 +140,26 @@ ul.main-menu li a.active {
   display:block;
 }
 
+/* Sticky header: logo left, title center, menu right */
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;                        /* stays above the storymap iframe */
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;  /* left | center | right */
+  align-items: center;
+}
+#header img {
+  justify-self: start;
+}
+#header h1 {
+  margin: 0;                            /* removes the 2rem bottom margin so it centers vertically */
+  text-align: center;
+}
+#header ul.main-menu {
+  justify-content: flex-end;            /* overrides the existing "left" */
+}
+#header ul.main-menu li:last-child a {
+  margin-right: 0;                      /* keeps the last link flush with the right edge */
+}
+

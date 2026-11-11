@@ -20,15 +20,6 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
 
-    <script>
-      if (window.location.pathname.includes('storymap.html')) {
-        window.storyMapsEmbedConfig = {
-          "storyId": "417a681f15dd44dd90ee016467c8176b",
-          "rootNode": ".storymaps-root"
-        }
-        console.log("The script is executing only on the contact page.");
-      }
-    </script>
     <!-- Want to add Bootstrap? -->
     <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
     
@@ -85,6 +76,16 @@
       </div>
     </div>
 
+    <script>
+      if (window.location.pathname.includes('storymap.html')) {
+        window.storyMapsEmbedConfig = {
+          "storyId": "417a681f15dd44dd90ee016467c8176b",
+          "rootNode": ".storymaps-root"
+        }
+        console.log("The script is executing only on the contact page.");
+      }
+    </script>
+    
     <footer>  
       Footer region
     </footer>

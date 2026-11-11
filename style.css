@@ -98,11 +98,11 @@ html {
 }
 body {
   max-width:1400px;
-  margin:25px auto;
+  margin:10px auto;
 }
 header, #content, footer { 
   background: rgba(0,0,0,.8); 
-  padding:25px;
+  padding:10px;
   color:#FFFFFF; 
 }
 iframe {
@@ -142,12 +142,14 @@ ul.main-menu li a.active {
 
 /* Sticky header: logo left, title center, menu right */
 #header {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;                        /* stays above the storymap iframe */
   display: grid;
   grid-template-columns: 1fr auto 1fr;  /* left | center | right */
   align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 #header img {
   justify-self: start;

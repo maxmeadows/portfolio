@@ -32,18 +32,16 @@
   </head>
   
   <body>
-    
-    <header id="header">
-      <img src="portfoliologo.gif">
-      <h1>My Portfolio</h1>
-      
-      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
-      <ul class="main-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#storymap">StoryMap</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>                 
+
+    <header class="site-header">
+      <img class="logo" src="portfoliologo.gif" alt="Logo">
+      <h1 class="site-title">My Portfolio</h1>
+      <nav class="nav">
+        <button onclick="showPage('about')">About</button>
+        <button onclick="showPage('portfolio')">Portfolio</button>
+        <button onclick="showPage('storymap')">Storymap</button>
+        <button onclick="showPage('contact')">Contact</button>
+      </nav>
     </header>
    
     <div id="container">

@@ -61,8 +61,13 @@
           <div id="storymap" class="content-region hide">
             <h2>My GIS StoryMap</h2>
             <p>
-              <iframe src="https://storymaps.arcgis.com/stories/417a681f15dd44dd90ee016467c8176b?header" width="100%" height="500px" frameborder="0" allowfullscreen allow="geolocation"></iframe>
-            </p>
+              <script>
+                window.storyMapsEmbedConfig = {
+                "storyId": "417a681f15dd44dd90ee016467c8176b",
+                "rootNode": ".storymaps-root"
+              }
+              </script>
+              <script src="https://storymaps.arcgis.com/embed/view"></script>
           </div>
           
           <div id="contact" class="content-region hide">

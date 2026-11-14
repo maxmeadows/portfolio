@@ -166,7 +166,7 @@ ul.main-menu li a.active {
   padding-bottom: 10px;
 }
 #header img {
-  height: 150px;   /* adjust to taste; the header height follows the logo */
+  height: 100px;   /* adjust to taste; the header height follows the logo */
   width: auto;
 }
 body {

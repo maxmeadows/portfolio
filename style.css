@@ -97,7 +97,6 @@ html {
   background-size:cover;
 }
 body {
-  max-width: 1400px;
   margin:10px auto;
 }
 header, #content, footer { 
@@ -170,6 +169,11 @@ ul.main-menu li a.active {
   height: 150px;   /* adjust to taste; the header height follows the logo */
   width: auto;
 }
+body {
+  max-width: none;   /* removes the 1400px cap */
+  margin: 0;
+}
+
 #container,
 footer {
   max-width: 1400px;

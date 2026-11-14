@@ -166,7 +166,7 @@ ul.main-menu li a.active {
   padding-bottom: 10px;
 }
 #header img {
-  height: 80px;   /* adjust to taste; the header height follows the logo */
+  height: 100px;   /* adjust to taste; the header height follows the logo */
   width: auto;
 }
 body {
@@ -184,4 +184,17 @@ html {
   scroll-padding-top: 80px;   /* a bit more than the header's height */
 }
 
-
+html {
+  background: url(background.jpg) center center no-repeat fixed;
+  background-size: cover;
+}
+body,
+#container,
+.inner {
+  background: transparent;
+}
+#header,
+#content,
+footer {
+  background: rgba(0, 0, 0, .8);
+}

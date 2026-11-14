@@ -185,16 +185,19 @@ html {
 }
 
 html {
-  background: url(background.jpg) center center no-repeat fixed;
-  background-size: cover;
+  background: url(background.jpg) center center no-repeat fixed !important;
+  background-size: cover !important;
 }
 body,
 #container,
 .inner {
-  background: transparent;
+  background: transparent !important;
 }
 #header,
 #content,
 footer {
-  background: rgba(0, 0, 0, .8);
+  background: rgba(0, 0, 0, .8) !important;
+}
+.storymaps-root {
+  background: transparent !important;
 }

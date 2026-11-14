@@ -20,12 +20,7 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
 
-    <script>
-      window.storyMapsEmbedConfig = {
-        "storyId": "417a681f15dd44dd90ee016467c8176b",
-        "rootNode": ".storymaps-root"
-      }
-    </script>
+    
     <!-- Want to add Bootstrap? -->
     <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
     
@@ -66,11 +61,8 @@
 
           <div id="storymap" class="content-region hide">
             <h2>My GIS StoryMap</h2>
-            <p>
-              
-            </p>
+            <p></p>
             <div class="storymaps-root"></div>
-            <script src="https://storymaps.arcgis.com/embed/view"></script>
           </div>
           
           <div id="contact" class="content-region hide">
@@ -87,7 +79,39 @@
     <footer>  
       Footer region
     </footer>
-    
+
+    <script>
+  (function () {
+    var loaded = false;
+
+    function loadStoryMap() {
+      if (loaded) return;
+      loaded = true;
+
+      // Config must be set before the embed script runs
+      window.storyMapsEmbedConfig = {
+        storyId: "417a681f15dd44dd90ee016467c8176b",
+        rootNode: ".storymaps-root"
+      };
+
+      // Short delay so your page-switching code can show the div first
+      setTimeout(function () {
+        var s = document.createElement("script");
+        s.src = "https://storymaps.arcgis.com/embed/view";
+        document.body.appendChild(s);
+      }, 50);
+    }
+
+    // Load if someone opens the page via a menu click or a direct #storymap link
+    window.addEventListener("hashchange", function () {
+      if (location.hash === "#storymap") loadStoryMap();
+    });
+    if (location.hash === "#storymap") loadStoryMap();
+
+    var link = document.querySelector('a[href="#storymap"]');
+    if (link) link.addEventListener("click", loadStoryMap);
+  })();
+</script>
     <!-- Load additional JS scripts here -->
     <script type="text/javascript" src="script.js"></script>
     

@@ -141,7 +141,7 @@ ul.main-menu li a.active {
 
 /* Sticky header: logo left, title center, menu right */
 #header {
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 1000;                        /* stays above the storymap iframe */
   display: grid;

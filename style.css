@@ -57,6 +57,7 @@ h6 { font-size: 1.4rem; line-height: 1.6;  letter-spacing: 0; }
  */
 p {
   margin: 0 auto 2.5em auto; /* bottom margin for paragraphs */
+  color: #000;
 }
 p + p {
 
@@ -159,14 +160,14 @@ ul.main-menu li a.active {
   justify-content: flex-end;            /* overrides the existing "left" */
 }
 #header ul.main-menu li:last-child a {
-  margin-right: 0;                      /* keeps the last link flush with the right edge */
+  margin-right: 5;                      /* keeps the last link flush with the right edge */
 }
 #header {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 #header img {
-  height: 100px;   /* adjust to taste; the header height follows the logo */
+  height: 110px;   /* adjust to taste; the header height follows the logo */
   width: auto;
 }
 body {
@@ -184,6 +185,7 @@ html {
   scroll-padding-top: 80px;   /* a bit more than the header's height */
 }
 
+/* keeps whole portfolio from being overriden by storymap embed */
 html {
   background: url(background.jpg) center center no-repeat fixed !important;
   background-size: cover !important;
@@ -193,16 +195,27 @@ body,
 .inner {
   background: transparent !important;
 }
-#header,
-#content,
-footer {
-  background: rgba(0, 0, 0, .8) !important;
+#content {
+  background: rgba(0, 0, 0, 0) !important;
 }
 .storymaps-root {
   background: transparent !important;
 }
-
 #header,
 footer {
   background: linear-gradient(135deg, rgba(45, 80, 135, 1), rgba(45, 135, 135, 1)) !important;
+}
+
+
+/* footer fixed to bottom of page */
+html, body {
+  min-height: 100%;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+#container {
+  flex: 1;   /* takes up the leftover space, pushing the footer down */
 }

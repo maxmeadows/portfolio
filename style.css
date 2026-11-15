@@ -57,7 +57,7 @@ h6 { font-size: 1.4rem; line-height: 1.6;  letter-spacing: 0; }
  */
 p {
   margin: 0 auto 2.5em auto; /* bottom margin for paragraphs */
-  color: #000;
+  color: #000 !important;
 }
 p + p {
 
@@ -195,7 +195,7 @@ body,
 .inner {
   background: transparent !important;
 }
-#content {
+body {
   background: rgba(0, 0, 0, 0) !important;
 }
 .storymaps-root {

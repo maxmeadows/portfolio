@@ -224,3 +224,31 @@ body {
 #container {
   flex: 1;   /* takes up the leftover space, pushing the footer down */
 }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;   /* children fill the full width by default */
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+#container {
+  align-self: center !important;     /* centers the 1400px column */
+  width: 100% !important;
+  max-width: 1400px !important;
+  margin: 25px 0 0 0 !important;
+  flex: 1 0 auto;
+}
+
+footer {
+  align-self: stretch !important;    /* full page width */
+  width: 100% !important;
+  max-width: none !important;
+  margin: 25px 0 0 0 !important;
+}

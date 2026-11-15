@@ -201,3 +201,8 @@ footer {
 .storymaps-root {
   background: transparent !important;
 }
+
+#header,
+footer {
+  background: linear-gradient(135deg, rgba(45, 80, 135, 1), rgba(45, 135, 135, 1)) !important;
+}

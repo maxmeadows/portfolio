@@ -251,11 +251,5 @@ footer {
   width: 100% !important;
   max-width: none !important;
   margin: 25px 0 0 0 !important;
-}
-
-footer {
-  display: flex;
-  justify-content: center;   /* horizontal */
-  align-items: center;       /* vertical */
-  min-height: 60px;          /* optional: gives it height to center within */
+  text-align: center;
 }

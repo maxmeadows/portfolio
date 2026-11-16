@@ -159,7 +159,7 @@ ul.main-menu li a.active {
   justify-content: flex-end;            /* overrides the existing "left" */
 }
 #header ul.main-menu li:last-child a {
-  margin-right: 0;                      /* keeps the last link flush with the right edge */
+  margin-right: 20;                      /* keeps the last link flush with the right edge */
 }
 #header {
   padding-top: 10px;
